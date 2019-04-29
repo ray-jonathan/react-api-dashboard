@@ -16,9 +16,16 @@ class Weather extends React.Component{
         });
     }
     render(){
-        const styles={height:'300px', width:'300px', backgroundColor:'rgb(100,155,255)'};
+        const styles={
+            height:'300px', 
+            width:'300px', 
+            backgroundColor:'rgb(100,155,255)',
+            display:'flex',
+            flexDirection:'column',
+            justifyContent:'center'
+        ,};
         return(<div style={styles}>
-            <h3>{this.state.weather.name}</h3>
+            <h3>{this.state.weather.name}, GA</h3>
             {this.state.weather.main? <h3>Temp: {Math.round(this.state.weather.main.temp)} °F</h3> : null}
         </div>)
     }
