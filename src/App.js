@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css'; //
 import Weather from './Weather';
+import Fortune from './Fortune';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <h2 style={{margin: `0`, color: `#FFF`} }>React Dashboard</h2>
       <header className="App-header">
       <Weather />
+      <Fortune />
       </header>
     </div>
   );
