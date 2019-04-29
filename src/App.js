@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css'; //
 import Weather from './Weather';
 import Fortune from './Fortune';
+import Joke from './Joke';
+import GOT from './GOT';
 
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
       <header className="App-header">
       <Weather />
       <Fortune />
+      <Joke />
+      <GOT />
       </header>
     </div>
   );

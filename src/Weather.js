@@ -10,7 +10,6 @@ class Weather extends React.Component{
     }
     async componentDidMount(){
         const weatherData = await axios.get('http://api.openweathermap.org/data/2.5/weather?q=Atlanta,us&units=imperial&APPID=10d667ba6594ac68504b009b3669ad75')
-        console.log(weatherData.data.main.temp);
         this.setState({
             weather: weatherData.data
         });
